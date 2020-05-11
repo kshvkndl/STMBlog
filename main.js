@@ -11,3 +11,11 @@ menuToggler.addEventListener('click', function () {
     body.classList.toggle('open');
 });
 
+ClassicEditor
+    .create(document.querySelector('#postDesc'))
+    .then(editor => {
+        console.log(editor);
+    })
+    .catch(error => {
+        console.error(error);
+    });

@@ -28,16 +28,16 @@
                         <a href="index.html" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Categories</a>
+                        <a href="categories.html" class="nav-link">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
+                        <a href="aboutus.html" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link btn bta-btn">Get a Quote</a>
+                        <a href="contact.html" class="nav-link mbtn bta-btn">Get a Quote</a>
                     </li>
 
                 </ul>
@@ -61,13 +61,70 @@
                     <div class="line line-right"></div>
                 </div>
                 <div class="single-animation text-capitalize">
-                    <a href="#" class="btn bta-btn">Visit latest posts</a>
-                    <a href="#" class="btn cta-btn">Post free ad / blog</a>
+                    <a href="#recent-section" class="mbtn bta-btn">Visit latest posts</a>
+                    <a href="#" data-toggle="modal" data-target="#bd-example-addpost-lg" class="mbtn cta-btn">Post
+                        free ad / blog</a>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- Hero ends -->
+
+    <!-- Large modal -->
+    <div class="modal  fade modal-custom" tabindex="-1" id="bd-example-addpost-lg" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true" style=" z-index: 9999999;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="" method="" class="add-post" id="">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalScrollableTitle"><i class="fas fa-file"></i> Add New
+                            Post</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="font-size: 1.5rem;">
+
+                        <label for="postAuthor">Author Name</label>
+                        <input type="text" class="form-control form-control-md" id="postAuthor" name="inputPostAuthor"
+                            placeholder="Enter Author Name">
+
+                        <label for="postTitle">Post Title</label>
+                        <input type="text" class="form-control form-control-md" id="postTitle" name="inputPostTitle"
+                            placeholder="Enter Post Title">
+
+                        <label for="postImage">Post Image</label>
+                        <input type="file" class="form-control form-control-md" accept="image/png, image.jpeg"
+                            id="postImage" name="inputPostImage" placeholder="Choose Post Image File">
+
+                        <label for="postDesc">Post Description</label>
+                        <textarea name="postDesc" id="postDesc" class="form-control form-control-md" cols="" rows=""
+                            placeholder="Enter Post Description"></textarea>
+
+                        <label for="postCategory">Post Category</label>
+                        <input type="text" class="form-control form-control-md" list="category-list" id="postCategory"
+                            name="inputPostCategory" placeholder="--Select Post Category--">
+                        <datalist id="category-list">
+                            <option value="Multimedia"></option>
+                            <option value="Web Development"></option>
+                            <option value="Digital Marketing"></option>
+                        </datalist>
+
+                        <label for="Publish Date">Post Date</label>
+                        <input type="date" class="form-control form-control-md" id="postAuthor" name="inputPostDate"
+                            placeholder="Enter Post Author">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="mbtn bta-btn" data-dismiss="modal">Close</button>
+                        <button type="reset" class="mbtn cta-btn">Reset</button>
+                        <button type="submit" class="mbtn bta-btn">Add Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div id="cat-section">
         <div class="container">
@@ -123,7 +180,7 @@
                     <div class="post-one post-one-img">
                         <div class="post p-5">
                             <span class="post-cat-tag text-center">Web Developemt</span>
-                            <a class="body-hover" href="#">
+                            <a class="body-hover" href="./blog_post_details.html">
                                 <div class="post-one-body">
                                     <h2 class="text-capitalize">The Road Ahead</h2>
                                     <p>The road ahead might be life saver - it might not be.</p>
@@ -142,7 +199,7 @@
                     <div class="post-one post-two-img">
                         <div class="post p-5">
                             <span class="post-cat-tag text-center">Multimedia</span>
-                            <a class="body-hover" href="#">
+                            <a class="body-hover" href="./blog_post_details.html">
                                 <div class="post-one-body">
                                     <h2 class="text-capitalize">From Top Down </h2>
                                     <p>The road ahead might be life saver - it might not be.</p>
@@ -162,6 +219,37 @@
     </section>
     <!-- Feature Section ends -->
 
+    <section id="video-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-5">
+                    <div class="featured-heading text-capitalize mt-4">
+                        <h1 class="text-center">Our Commitment & Focus</h1>
+                    </div>
+                    <div class="seperator">
+                        <div class="line line-left"></div>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        <div class="line line-right"></div>
+                    </div>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur dolore
+                        adipisci
+                        odit eos.
+                        Delectus minima iste distinctio, vero quod reprehenderit voluptatem quasi dolores voluptatibus
+                        minus! Dolores molestias necessitatibus cumque atque facere maiores molestiae cupiditate quasi
+                        non dolorem iure magnam optio debitis illo, est, quo maxime voluptatum commodi odit. Fugiat
+                        maiores dolore, ad, culpa accu santium minus saepe veritatis itatibus sit harum
+                        corrupti . Dignissimos ?</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-3">
+                    <video width="100%" height="auto" autoplay controls>
+                        <source src="./dist/Social Media.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section ends -->
 
     <section id="recent-section">
         <div class="container">
@@ -185,7 +273,7 @@
                     <div class="recent-post">
                         <img src="./images/post_images/2.jpg" alt="">
                         <span class="post-cat-tag text-center">Multimedia</span>
-                        <a href="#">
+                        <a href="./blog_post_details.html">
                             <div class="post-recent-body">
                                 <h2 class="text-capitalize">From Top Down </h2>
                                 <p>The road ahead might be life saver.</p>
@@ -204,7 +292,7 @@
                     <div class="recent-post">
                         <img src="./images/post_images/2.jpg" alt="">
                         <span class="post-cat-tag text-center">Machine Learning</span>
-                        <a href="#">
+                        <a href="./blog_post_details.html">
                             <div class="post-recent-body">
                                 <h2 class="text-capitalize">From Top Down </h2>
                                 <p>The road ahead might be life saver.</p>
@@ -224,7 +312,7 @@
                     <div class="recent-post">
                         <img src="./images/post_images/2.jpg" alt="">
                         <span class="post-cat-tag text-center">Neural Network</span>
-                        <a href="#">
+                        <a href="./blog_post_details.html">
                             <div class="post-recent-body">
                                 <h2 class="text-capitalize">From Top Down </h2>
                                 <p>The road ahead might be life saver.</p>
@@ -243,7 +331,7 @@
                     <div class="recent-post">
                         <img src="./images/post_images/2.jpg" alt="">
                         <span class="post-cat-tag text-center">Cryptography</span>
-                        <a href="#">
+                        <a href="./blog_post_details.html">
                             <div class="post-recent-body">
                                 <h2 class="text-capitalize">From Top Down </h2>
                                 <p>The road ahead might be life saver.</p>
@@ -262,7 +350,7 @@
                     <div class="recent-post">
                         <img src="./images/post_images/2.jpg" alt="">
                         <span class="post-cat-tag text-center">Web Design</span>
-                        <a href="#">
+                        <a href="./blog_post_details.html">
                             <div class="post-recent-body">
                                 <h2 class="text-capitalize">From Top Down </h2>
                                 <p>The road ahead might be life saver.</p>
@@ -281,7 +369,7 @@
                     <div class="recent-post">
                         <img src="./images/post_images/2.jpg" alt="">
                         <span class="post-cat-tag text-center">Graphic Design </span>
-                        <a href="#">
+                        <a href="./blog_post_details.html">
                             <div class="post-recent-body">
                                 <h2 class="text-capitalize">From Top Down </h2>
                                 <p>The road ahead might be life saver.</p>
@@ -299,7 +387,7 @@
             </div>
         </div>
     </section>
-    <!-- Feature Section ends -->
+    <!-- Recent Section ends -->
 
 
     <section id="newsletter-section">
@@ -319,6 +407,7 @@
                 </div>
             </div>
             <div class="row mt-5 mb-5">
+                <!-- empty divs are only for responsiveness -->
                 <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12"></div>
                 <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
                     <div class="newsletter">
@@ -342,37 +431,38 @@
     <!-- Newsletter Subscription ends -->
 
     <footer id="footer">
+        <div class="back-to-top">
+            <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 logo footer-logo mt-2">
+                <div class="col-md-3 logo footer-logo mt-4 ">
                     <img src="./images/stm-logo.png" width="20" alt="">
                 </div>
-                <div class="col-md-9 mt-3">
+                <div class="col-md-9 mt-4">
                     <div class="footer-link">
                         <ul class="footer-list">
-                            <li class="footer-item">
+                            <li class="footer-item ">
                                 <a href="index.html" class="footer-link">Home</a>
                             </li>
                             <li class="footer-item">
-                                <a href="index.html" class="footer-link">Categories</a>
+                                <a href="categories.html" class="footer-link">Categories</a>
                             </li>
                             <li class="footer-item">
-                                <a href="index.html" class="footer-link">About Us</a>
+                                <a href="aboutus.html" class="footer-link">About Us</a>
                             </li>
                             <li class="footer-item">
-                                <a href="index.html" class="footer-link">Contact</a>
+                                <a href="contact.html" class="footer-link">Contact</a>
                             </li>
                             <li class="footer-item">
-                                <a href="index.html" class="footer-link">Terms & Conditions</a>
+                                <a href="#?" class="footer-link">Terms & Conditions</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="copyright text-center text-light p-3 ">
-                        <span>All Right Reserved &copy; 2020 <a href="https://kshvkndl.github.io/"
-                                target="_blank">Keshav
-                                Kandel</a>
+                        <span>All Right Reserved &copy; 2020 <a href="#" target="_blank">SoftTech Multimedia</a>
                         </span>
                     </div>
                 </div>
@@ -381,8 +471,11 @@
     </footer>
 
 
+    <script src="./dist/js/jquery-3.3.1.min.js"></script>
+    <script src="./dist/js/ckeditor.js"></script>
     <script src="./dist/js/all.min.js"></script>
     <script src="./main.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
