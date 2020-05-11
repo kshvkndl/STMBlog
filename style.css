@@ -699,6 +699,7 @@ footer{
 }
 
 .cat-div .post-cat-tag{
+    width:100%;
     font-size: 1.8rem;
     font-weight: 300;
     padding: 1rem 3rem;
