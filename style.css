@@ -444,7 +444,7 @@ header{
     padding: .6rem;
     color: rgb(19, 17, 17);
     font-weight: 500;
-    background-color: var(--secondary-color-dark-white);
+    background-color: var(--primary-color-orange);
     border-radius: 1px;
     letter-spacing: 1px;
 }
@@ -714,7 +714,7 @@ footer{
     background-color: transparent;
     letter-spacing: normal ;
     width:100%;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 400;
     padding: 1rem 3rem;
     z-index: 99;
@@ -722,6 +722,7 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: var(--normal-white);
     
 }
 
