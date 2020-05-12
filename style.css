@@ -442,7 +442,7 @@ header{
 
 .post-cat-tag{
     padding: .6rem;
-    color: #fff;
+    color: rgb(19, 17, 17);
     font-weight: 500;
     background-color: var(--secondary-color-dark-white);
     border-radius: 1px;
@@ -526,7 +526,10 @@ header{
 }
 
 .post-recent-body h2{
-    color: var(--primary-color-orange);
+    color: var(--secondary-color-dark-white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200 ;
+    font-size: 1.7rem;
 }
 
 .post-recent-body p{
@@ -557,7 +560,10 @@ header{
 
 /* Newsletter section */
 #newsletter-section{
-    background-image: linear-gradient(to bottom, var(--primary-color-orange), var(--secondary-color-dark-white) );
+    background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0.76), rgba(78, 78, 78, 0.781) ), url('./images/post_images/2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .newsletter{
@@ -598,6 +604,11 @@ header{
 /* Footer Section */
 
 #footer{
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0.8), rgba(117, 19, 93, 0.8)), url('./images/post_images/2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: -2px -2px 20px 2px #383838;
 }
 
@@ -699,9 +710,12 @@ footer{
 }
 
 .cat-div .post-cat-tag{
+    text-transform: capitalize;
+    background-color: transparent;
+    letter-spacing: normal ;
     width:100%;
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 400;
     padding: 1rem 3rem;
     z-index: 99;
     position: absolute; 
@@ -710,19 +724,6 @@ footer{
     transform: translate(-50%, -50%);
     
 }
-
-.cat-div .odd{
-    background-color: var(--primary-color-orange);
-    box-shadow: 1px 1px 5px 3px rgb(41, 44, 31);
-}
-
-
-.cat-div .even{
-    background-color: var(--secondary-color-dark-white);
-    box-shadow: 1px 1px 5px 2px rgb(20, 20, 20);
-}
-
-/* Contact Page */
 
 .contact-social{
     font-size: 1.5rem;
@@ -920,7 +921,10 @@ footer{
         font-size: 2rem !important;
         letter-spacing: .8rem;
     } 
+
+
     /* footer */
+
     .footer-logo img{
         width: 65px;
     }
