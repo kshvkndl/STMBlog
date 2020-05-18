@@ -14,8 +14,8 @@ menuToggler.addEventListener('click', function () {
 ClassicEditor
     .create(document.querySelector('#postDesc'))
     .then(editor => {
-        console.log(editor);
+        // console.log(editor);
     })
     .catch(error => {
-        console.error(error);
+        // console.error(error);
     });
